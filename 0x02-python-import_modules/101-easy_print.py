@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-exec("print('#pythoniscool')")
+import easy_print_101
+easy_print_101.print_python_is_cool()
