@@ -5,6 +5,6 @@ def delete_at(my_list=[], idx=0):
         return my_list
     # Create a new list that contains all
     # elements except elem at the given index
-    del(my_list[idx])
+    del (my_list[idx])
     #  Return mofdified list
     return my_list
