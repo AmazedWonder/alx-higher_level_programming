@@ -1,4 +1,17 @@
 #!/usr/bin/python3
+"""Define a class Square.
+
+Defines a square with a private instance attribute __size,
+validates the size argument using the rules specified in the prompt,
+uses property decorators to define getter and setter methods for the
+size attribute, private instance attribute __position, validates the
+position argument using the rules specified in the prompt, uses property
+decorators to define getter and setter methods for the position attribute,
+along with public instance methods area and my_print.
+
+"""
+
+
 class Square:
     """Defines a Square class with a private
        instance attribute __size.
