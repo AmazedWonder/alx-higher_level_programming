@@ -1,4 +1,25 @@
 #!/usr/bin/python3
+"""Define a class Square.
+
+Defines a square with a private instance attribute __size,
+validates the size argument using the rules specified in the
+prompt, and defines a public instance method area that returns
+the area of the square.
+
+When a method is called on an instance of a class, the
+instance is automatically passed as the first argument to
+the method. By convention, this argument is named self. This
+allows the method to access the instance's attributes and
+methods using the self parameter.
+
+Self is a conventionally used first parameter name in instance
+methods of a class. The self parameter holds a reference to the
+instance of the class that the method is being called on. It is
+used to access the instance's attributes and methods.
+
+"""
+
+
 class Square:
     """A class that represents a square.
 
