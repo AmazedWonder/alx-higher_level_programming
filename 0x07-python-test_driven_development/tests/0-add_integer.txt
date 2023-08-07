@@ -1,0 +1,66 @@
+# 0-add_integer.txt
+
+====================================
+Tests 0-add_integer.py using doctest
+====================================
+
+This module defines an integer addition function ``add_integer(a, b=98)``.
+
+Usage
+=====
+
+``add_integer(...)``` returns the addition of its two arguments. For numbers, that value is equivalent to using the ``+`` operator.
+
+::
+
+    # Test Case 1: Both inputs are integers
+    # Expected output: 1 + 2 = 3
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(1, 2)
+    3
+
+::
+
+    # Test case 2: Adding two integers with a negative result
+    >>> add_integer(100, -2)
+    98
+
+::
+
+    # Test Case 3: One input is a float and the other is an integer
+    # Expected output: 100.3 + (-2) = 98
+    >>> add_integer(100.3, -2)
+    98
+
+::
+
+    # Test Case 4: Both inputs are floats
+    # Expected output: 100.3 + (-2.0) = 98
+    >>> add_integer(100.3, -2.0)
+    98
+
+::
+
+    # Test case 5: Adding one integer with the default value
+    >>> add_integer(2)
+    100
+
+Not Numbers
+===========
+
+``add_integer()`` expects that both arguments are either integers or floats. If either argument is a non-integer and non-float, a TypeError is raised:
+
+::
+
+    # Test case 6: TypeError when adding an integer and a non-integer
+    # Expected output: Raises a TypeError
+    try:
+        add_integer(4, "School")
+    except TypeError as e:
+        assert str(e) == "b must be an integer"
+
+    # Test case 7: TypeError when adding a None value
+    try:
+        add_integer(None)
+    except TypeError as e:
+        assert str(e) == "a must be an integer"
