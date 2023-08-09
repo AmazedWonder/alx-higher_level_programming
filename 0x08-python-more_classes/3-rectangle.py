@@ -123,11 +123,11 @@ class Rectangle:
                 rect_str.append("\n")
         return ("".join(rect_str))
 
-    #def __repr__(self):
+    # def __repr__(self):
         """
         Return a string representation that can be used to recreate the object.
 
         Returns:
             str: A string representation of the rectangle object.
         """
-        #return f"Rectangle({self.width}, {self.height})"
+        # return f"Rectangle({self.width}, {self.height})"
