@@ -14,7 +14,7 @@ The text_indentation function takes a string text as input
 and prints the formatted text with two new lines after each
 occurrence of '.', '?', and ':'. Leading and trailing spaces
 on each line are removed. The function processes the input text
-character by character, identifies the specified punctuation marks, 
+character by character, identifies the specified punctuation marks,
 and formats the text accordingly.
 
 Parameters:
@@ -67,7 +67,8 @@ def text_indentation(text):
         # or one of the punctuation characters
         if text[char_index] == "\n" or text[char_index] in ".?:":
             if text[char_index] in ".?:":
-                print("\n")  # Print an extra newline after punctuation characters
+                # Print an extra newline after punctuation characters
+                print("\n")
             char_index += 1
             # Skip consecutive spaces
             while char_index < len(text) and text[char_index] == ' ':
