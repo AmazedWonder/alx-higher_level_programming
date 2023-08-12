@@ -44,6 +44,10 @@ a TypeError is raised.
 
 ::
 
+   >>> say_my_name("John", 12)
+   
+::
+
     >>> say_my_name("Joy", ["Adele", "Johnson", "Bill"])
     Traceback (most recent call last):
     TypeError: last_name must be a string
