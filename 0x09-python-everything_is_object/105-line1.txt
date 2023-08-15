@@ -1,1 +1,1 @@
-262  before the execution of line 2 (print("Love")), there are 5 int objects created and still in memory
+262
