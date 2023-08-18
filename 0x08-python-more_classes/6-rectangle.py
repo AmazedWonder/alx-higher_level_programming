@@ -9,7 +9,7 @@ The number_of_instances attribute is defined outside of
 any methods and is set to 0 initially.
 
 In the __init__ method, the number_of_instances attribute is incremented
-by 1 using type(self).number_of_instances += 1. This line ensures that 
+by 1 using type(self).number_of_instances += 1. This line ensures that
 every time a new Rectangle instance is created, the number_of_instances
 attribute is updated accordingly.
 
@@ -102,4 +102,3 @@ class Rectangle:
         """Print a message for every deletion of a Rectangle."""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-
