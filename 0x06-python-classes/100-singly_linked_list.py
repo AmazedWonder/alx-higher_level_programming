@@ -101,7 +101,7 @@ class SinglyLinkedList:
             # correct position to insert the new node
             present = self.__head
             while (present.next_node is not None and
-                  present.next_node.data < value):
+                    present.next_node.data < value):
                 present = present.next_node
             new_node.next_node = present.next_node
             present.next_node = new_node
