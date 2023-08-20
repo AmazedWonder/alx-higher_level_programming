@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define a MagicClass matching exactly a bytecode 
+"""Define a MagicClass matching exactly a bytecode
 
 Defines a class called MagicClass that represents a circle
 
@@ -44,4 +44,3 @@ class MagicClass:
     def circumference(self):
         """Return The circumference of the MagicClass."""
         return (2 * math.pi * self.__radius)
-
