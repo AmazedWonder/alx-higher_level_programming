@@ -8,19 +8,22 @@
  */
 void reverse_listint(listint_t **head)
 {
-	listint_t *previous = NULL;
+	/* Declare pointers for previous, current, and next nodes */
+	listint_t *prev = NULL;
 	listint_t *current = *head;
 	listint_t *next = NULL;
 
+	/* Reverse the linked list */
 	while (current)
 	{
-		previous = current;
-		current = next;
 		next = current->next;
-		current->next = previous;
+		current->next = prev;
+		prev = current;
+		current = next;
 	}
 
-	*head = previous;
+	/* Update the head pointer to the new head of the reversed list */
+	*head = prev;
 }
 
 /**
@@ -32,42 +35,47 @@ void reverse_listint(listint_t **head)
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *ptrslow = *head, *ptrfast = *head, *traverse = *head, *rev = NULL;
+	/* Declare pointers for slow, fast, temporary, and duplicated nodes */
+	listint_t *slow = *head, *fast = *head, *temp = *head, *dup = NULL;
 
-	/*checks if the input list is empty or contains only one element*/
-	/* to be considered palindrome*/
+	/* Check for base cases */
 	if (*head == NULL || (*head)->next == NULL)
 		return (1);
-	/* If the list has at least two elements*/
-	/*use two pointers slow and fast to find the middle of the list*/
+
+	/* Find the middle of the linked list */
 	while (1)
 	{
-		ptrfast = ptrfast->next->next;
-		if (!ptrfast)
+		fast = fast->next->next;
+		if (!fast)
 		{
-			rev = ptrslow->next;
+			dup = slow->next;
 			break;
 		}
-		if (!ptrfast->next)
+		if (!fast->next)
 		{
-			rev = ptrslow->next->next;
+			dup = slow->next->next;
 			break;
 		}
-		ptrslow = ptrslow->next;
+		slow = slow->next;
 	}
 
-	reverse_listint(&rev);
+	/* Reverse the second half of the linked list */
+	reverse_listint(&dup);
 
-	while (traverse && rev)
+	/* Compare original list and reversed list node by node */
+	while (dup && temp)
 	{
-		if (traverse->n == rev->n)
-			rev = rev->next;
-			traverse = traverse->next;
+		if (temp->n == dup->n)
+		{
+			dup = dup->next;
+			temp = temp->next;
+		}
 		else
 			return (0);
 	}
 
-	if (!rev)
+	/* If the loop completes without differences, it is a palindrome */
+	if (!dup)
 		return (1);
 
 	return (0);
