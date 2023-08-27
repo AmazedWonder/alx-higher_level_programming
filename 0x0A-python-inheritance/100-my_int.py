@@ -20,6 +20,7 @@ an "equal" comparison.
 
 """
 
+
 class MyInt(int):
     """Invert int operators == and !=."""
 
