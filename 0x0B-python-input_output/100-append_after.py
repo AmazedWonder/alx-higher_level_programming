@@ -13,7 +13,7 @@ in a line, it also appends the new_string after that line. Finally,
 the updated text is written back to the file, overwriting its
 previous contents.
 
-This code will open the file named "file.txt" and search for lines 
+This code will open the file named "file.txt" and search for lines
 containing the string "search". It will insert the string
 "inserted text" after each matching line in the file.
 
