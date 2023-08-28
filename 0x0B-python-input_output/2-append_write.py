@@ -12,7 +12,7 @@ Inside the function, the file is opened using the open function with
 the filename and the mode parameter set to "a" to indicate that the
 file should be opened in append mode. This means that new content will
 be added to the end of the file, rather than overwriting the existing
-content. The encoding parameter is set to "utf-8" to ensure that the 
+content. The encoding parameter is set to "utf-8" to ensure that the
 text is encoded in UTF-8.
 
 The file is opened in a with statement, which ensures that the file
