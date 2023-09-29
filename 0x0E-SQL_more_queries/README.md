@@ -6,8 +6,6 @@ MySQL
 
 ## Resources
 
-#### Read or watch:
-
 * [How To Create a New User and Grant Permissions in MySQL](https://intranet.alxswe.com/rltoken/RniBKj48bnIN8xpXhGl1yA)
 * [How To Use MySQL GRANT Statement To Grant Privileges To a User](https://intranet.alxswe.com/rltoken/FIiEIvA6IN_hSKM5TvgyxQ)
 * [MySQL constraints](https://intranet.alxswe.com/rltoken/LrovGa6N-OE2ID_tpWZRaQ)
@@ -23,7 +21,7 @@ MySQL
 * [MySQL 8.0 SQL Statement Syntax](https://intranet.alxswe.com/rltoken/YavbYiraYFr8oTukT_N6eQ)
 ## Learning Objectives
 
-### General
+### General Research
 
 * How to create a new MySQL user
 * How to manage privileges for a user to a database or table
