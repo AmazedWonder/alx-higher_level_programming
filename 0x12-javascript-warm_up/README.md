@@ -8,7 +8,7 @@ Files | Description
 [2-arguments.js](./2-arguments.js) | JScript that prints a message depending of the number of arguments passed
 [3-value_argument.js](./3-value_argument.js) | JScript that prints the first argument passed to it
 [4-concat.js](./4-concat.js) | JScript that prints two arguments passed to it, in the following format: “ is ”
-[5-to_integer.js](./5-to_integer.js) | JScript that prints number: <first argument converted in integer> if the first argument can be converted to an integer
+[5-to_integer.js](./5-to_integer.js) | JScript that prints str "My number": <first argument converted in integer> if the first argument can be converted to an integer or "not a number: if args is a string"
 [6-multi_languages_loop.js](./6-multi_languages_loop.js) | JScript that prints 3 lines: (like 1-multi_languages.js) but by using an array of string and a loop
 [7-multi_c.js](./7-multi_c.js) | JScript that prints x times “C is fun”
 [8-square.js](./8-square.js) | JScript that prints a square
