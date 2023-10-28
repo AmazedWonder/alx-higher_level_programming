@@ -4,7 +4,8 @@ import MySQLdb
 import sys
 
 
-# Provide your MySQL server credentials and database name as command line arguments
+# Provide your MySQL server credentials and database
+# name as command line arguments
 if __name__ == "__main__":
     # Connect to the MySQL server
     db = MySQLdb.connect(host="localhost", user=sys.argv[1],
