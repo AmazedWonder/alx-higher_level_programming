@@ -12,3 +12,4 @@ size=$(curl -w "%{size_download}\n" "$1" -so /dev/null)
 
 # Display the size of the response body
 echo "$size"
+# curl -w "%{size_download}\n" "$1" -so /dev/null
