@@ -3,8 +3,4 @@
 
 # URL, and displays the size of the body of the response
 # Send request and retrieve the size of the response body
-size=$(curl -w "%{size_download}\n" "$1" -so /dev/null)
-
-# Display the size of the response body
-echo "$size"
-#curl -w "%{size_download}\n" "$1" -so /dev/null
+curl -w "%{size_download}\n" "$1" -so /dev/null
