@@ -3,9 +3,10 @@
 Module Docs
 """
 
+
 def _fp_recurs(list_of_integers, begin, end):
     """
-    Recursive helper function to perform binary 
+    Recursive helper function to perform binary
     search for peak element within a given range.
     """
     # Base case: if the range has less than 2 elements, return None
@@ -37,7 +38,8 @@ def find_peak(list_of_integers):
         if list_of_integers[-1] >= list_of_integers[-2]:
             return list_of_integers[-1]
 
-        # Call the recursive helper function to find the peak within the range [0, len(list_of_integers))
+        # Call the recursive helper function to find the
+        # peak within the range [0, len(list_of_integers))
         return _fp_recurs(list_of_integers, 0, len(list_of_integers))
 
     # Handle the case when the list is empty
