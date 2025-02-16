@@ -33,3 +33,4 @@
 | 8. Search API | [8-json_api.py](./8-json_api.py) |
 | 9. My GitHub! | [10-my_github.py](./10-my_github.py) |
 `
+used: python3 -m http.server 5000 to start server to execute 3-error_code.py file

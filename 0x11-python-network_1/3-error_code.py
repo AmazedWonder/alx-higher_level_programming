@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Sends a request to a given URL and displays the response body.
 Usage: ./3-error_code.py <URL>
@@ -18,4 +17,3 @@ if __name__ == "__main__":
             print(response.read().decode("ascii"))
     except urllib.error.HTTPError as e:
         print("Error code: {}".format(e.code))
-
